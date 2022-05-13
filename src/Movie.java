@@ -9,6 +9,7 @@ public class Movie {
         priceCode = newpriceCode;
     }
     public int getPriceCode() {
+        
         return priceCode;
     }
     public void setPriceCode(int arg) {
