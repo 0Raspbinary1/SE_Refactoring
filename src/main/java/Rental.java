@@ -1,5 +1,3 @@
-package code;
-
 class Rental {
     private Movie movie;
     private int daysRented;
