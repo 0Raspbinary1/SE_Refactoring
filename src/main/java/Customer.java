@@ -28,6 +28,8 @@ class Customer {
 			double thisAmount = 0;
 			Rental each = (Rental) enum_rentals.nextElement();
 
+			thisAmount = each.getCharge();
+			
 			// determine amounts for each line
 			switch (each.getMovie().getPriceCode()) {
 				case Movie.REGULAR:
@@ -60,7 +62,5 @@ class Customer {
 		result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points";
 		return result;
 	}
-
-
-
+	
 }
